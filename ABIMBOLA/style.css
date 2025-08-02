@@ -1,0 +1,43 @@
+body {
+  color: #333;
+  line-height: 1.6;
+  background: #fff;
+}
+.hero {
+  background: linear-gradient(to right, #7b0b81, #e2e2e2);
+  padding: 140px 100px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: black;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.btn:hover {
+  background: #c14eea;
+}
+
+.btn-secondary {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #f7f7f7;
+  color: #333;
+  text-decoration: none;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+.about, .cta {
+  padding: 40px 20px;
+  text-align: center;
+}

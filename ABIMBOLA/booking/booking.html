@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Session - The Life Audit</title>
+  <link rel="stylesheet" href="booking.css">
+  <link rel="stylesheet" href="../Global/global.css">
+</head>
+<body>
+     <!-- Header-->
+  <header>
+    <div class="logo">
+      <img src="../image/kp-logo-placeholder.png" alt="The Life Audit Logo">
+      <h1>The Life Audit</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about/about.html">About</a></li>
+        <li><a href="#">Mind Audit Quiz</a></li>
+        <li><a href="#">Coaching Programs</a></li>
+        <li><a href="../booking/booking.html">Book a Session</a></li>
+        <li class="dropdown">
+        <a href="#" class="dropbtn">Resources ▾</a>
+        <ul class="dropdown-content">
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Podcast</a></li>
+          <li><a href="#">Downloads</a></li>
+        </ul>
+      </li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="book-section">
+    <h2>Book A session</h2>
+    <form id="bookForm">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="firstName">First Name *</label>
+          <input type="text" id="firstName" name="firstName" required>
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name *</label>
+          <input type="text" id="lastName" name="lastName" required>
+        </div>
+      </div>
+
+      <div class="form-group full-width">
+        <label for="service">Service Required</label>
+        <textarea id="service" name="service" rows="4" required></textarea>
+      </div>
+
+      <div class="form-group full-width">
+        <label for="phone">Phone number *</label>
+        <input type="tel" id="phone" name="phone" required pattern="[0-9]{10,15}">
+      </div>
+
+      <div class="form-group full-width">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <button type="submit" class="btn">Book A Session</button>
+      <p id="formStatus"></p>
+    </form>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-cont"></div>
+    <p style="font-size: 16px;">© 2025 The Life Audit</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
