@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    padding: 10px 30px;
+    border-bottom: 0.1px solid #ddd;
+    position: relative;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .logo h2 {
+    color: #d3b55a;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+header .logo img {
+    width: 60px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #bfa146;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: background 0.3s ease;
+}
+
+nav a:hover {
+    background: grey;
+    border-radius: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: black;
+    min-width: 160px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
+    z-index: 1000;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.dropdown-content li {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #f6f3f3;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: grey;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav .btn {
+    background-color: #bfa146;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Hamburger menu */
+.hamburger {
+    display: none;
+    font-size: 26px;
+    color: #bfa146;
+    cursor: pointer;
+}
+
+/* Footer styles */
+footer {
+    background: black;
+    color: #bfa146;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .social-icons a {
+    margin: 0 8px;
+}
+
+footer .social-icons img {
+    width: 20px;
+    height: 20px;
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(10deg);
+    transition: transform 0.3s ease;
+}
+
+footer .social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: black;
+        width: 100%;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    nav ul li {
+        border-bottom: 1px solid #333;
+    }
+
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}

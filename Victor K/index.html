@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vigour Essence</title>
+    <link rel="icon" type="image/png" href="./image/logo.png">
+    <link rel="stylesheet" href="./global/global.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="./image/logo.png" alt="Vigour Essence">
+            <h2>Vigour <br>Essence</h2>
+        </div>
+
+        <!-- Hamburger -->
+        <div class="hamburger" id="hamburger">
+            ☰
+        </div>
+
+        <nav id="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Product ▾</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Niche Oil</a></li>
+                        <li><a href="#">Oil Perfume</a></li>
+                        <li><a href="#">Perfume Customization</a></li>
+                        <li><a href="#">Perfume Recommendation</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="btn">Shop Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <img src="./image/download.jpeg" alt="perfume store" style="width: 100%; height: auto; max-height: 590px; object-fit: cover;">
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-left">© 2025. All rights reserved.</div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/vigour_essence/" target="_blank">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://www.tiktok.com/@vigour_essence" target="_blank">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/tiktok.svg" alt="TikTok">
+            </a>
+        </div>
+        <div class="footer-right">Designed by Benuk</div>
+    </footer>
+
+    <script>
+        // Toggle menu on mobile
+        const hamburger = document.getElementById('hamburger');
+        const navbar = document.getElementById('navbar');
+
+        hamburger.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
